@@ -9,9 +9,193 @@
     tools:context="ozaware.nanosensair.MainActivity$PlaceholderFragment">
 
     <TextView
-        android:id="@+id/section_label"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Location Data"/>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Particle in Air: "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/PartInairText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:inputType="none"
+        android:singleLine="false"
+        android:text="Null"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/Conc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:singleLine="false"
+        android:text="Null"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/PartInairText"
+        android:layout_marginTop="15dp"
+        android:text="Concentration: "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Time and Date of Last Update:"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/Conc"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/dandt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Null"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History: "
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/dandt"
+        android:layout_alignLeft="@+id/dandt"
+        android:layout_alignStart="@+id/dandt"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="Particle Type:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/Conc"
+        android:layout_alignStart="@+id/Conc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Concentration: "
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/histPartType1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_toStartOf="@+id/textView6"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Null"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/histconc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Null"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/histPartType2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/histPartType1"
+        android:layout_alignLeft="@+id/histPartType1"
+        android:layout_alignRight="@+id/histPartType1"
+        android:layout_alignStart="@+id/histPartType1"
+        android:layout_below="@+id/histPartType1"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Null"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/histConc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/histconc1"
+        android:layout_alignStart="@+id/histconc1"
+        android:layout_below="@+id/histconc1"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Null"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/histPartType3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/histPartType2"
+        android:layout_alignLeft="@+id/histPartType2"
+        android:layout_alignRight="@+id/histPartType2"
+        android:layout_alignStart="@+id/histPartType2"
+        android:layout_below="@+id/histPartType2"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Name" />
 
 </RelativeLayout>
