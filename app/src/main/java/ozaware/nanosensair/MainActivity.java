@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             return 3;
         }
 
-        //Edited to change position
+        //Edited so that the app location can be easily determined
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {

@@ -12,9 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class tab3_settings extends Fragment {
+    //Create method for app
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        //inflater.inflate says what file is associated with the java code
         View rootView = inflater.inflate(R.layout.tab1_data_from_air, container, false);
         return rootView;
     }
